@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* Clock Container */
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  background: rgb(83, 83, 83);
+}
+
+/* Minutes hand */
+.min-hand {
+  width: 4px;
+  height: 40%;
+  background: #9c9c9c;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+/* Hours hand */
+.hour-hand {
+  width: 6px;
+  height: 30%;
+  background: #ececec;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+/* Seconds hand */
+.second-hand {
+  width: 2px;
+  height: 45%;
+  background: rgb(1, 196, 255);
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: rotate(0deg);
+}
+
+/* Clock Markings start*/
+.marking-one { /* top */
+  width: 4px;
+  height: 15px;
+  background: #e6f7ff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: center bottom;
+}
+
+.marking-two { /* right */
+  width: 4px;
+  height: 15px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center;
+}
+
+.marking-three { /* bottom */
+  width: 4px;
+  height: 15px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  transform-origin: center;
+}
+
+.marking-four { /* left */
+  width: 4px;
+  height: 15px;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+}
+/* Clock Markings End */
